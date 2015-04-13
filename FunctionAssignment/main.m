@@ -7,11 +7,47 @@
 //
 
 #import <Foundation/Foundation.h>
-
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+bool IsOdd (int i){
+    if ( i%2!=0) {
+        return true;
+    }else{
+        return false;
+        
     }
-    return 0;
 }
+bool IsEven (int i){
+    if (i%2==0){
+        return true;
+    }else{
+        return false;
+    }
+}
+int main(int argc, const char * argv[]){
+    @autoreleasepool{
+        int i;
+        for (i=0;i<1001;i++){
+            if (IsEven(i)){
+                NSLog (@"Even");
+                
+                   
+            }
+            if(IsOdd(i)){
+                NSLog (@"Odd");
+            }
+        }
+        return 0;
+    }
+}
+
+             
+             
+        
+    
+    
+        
+    
+
+
+    
+
+
